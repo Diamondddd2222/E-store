@@ -4,6 +4,7 @@ import { auth, db } from "../firebase";
 import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Signup.css";
 
 export default function Signup() {
@@ -132,7 +133,7 @@ export default function Signup() {
           </p>
 
           <div className="login-link">
-            <a href="/Login">Already have an account? Log in</a>
+         <Link to="/login">Already have an account? Log in</Link>
           </div>
         </form>
 

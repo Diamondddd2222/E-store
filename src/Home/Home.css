@@ -543,12 +543,7 @@ li{
 }
 
 
-.single-product:hover .product-title,
-.single-product:hover .description {
-    max-width: 100%;
-    white-space: normal;
-    overflow: visible;
-}
+
 
   .image-description-col {
     flex-direction: column;

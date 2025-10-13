@@ -73,7 +73,7 @@ function App() {
       <Route path="/ProductCart" element= {<ProductCart/>}/>
       <Route path="/CheckoutPage" element={<CheckoutPage/>}/>
       <Route path="/Signup" element={<Signup/>}/>
-      <Route path="/Login" element={<Login/>}/>
+      <Route path="/login" element={<Login/>}/>
       <Route path="/ForgetPassword" element={<ForgetPassword/>}/>
     </Routes>
   );
