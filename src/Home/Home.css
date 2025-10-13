@@ -542,7 +542,7 @@ li{
     gap: 15px;
 }
 
-* ✅ Reveal full text on hover */
+
 .single-product:hover .product-title,
 .single-product:hover .description {
     max-width: 100%;
