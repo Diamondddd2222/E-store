@@ -1,0 +1,132 @@
+.product-details-card{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.322);
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.product-details-image{
+    width: 300px;
+    height: 350px;
+    object-fit: contain;
+    border: 1px solid rgba(128, 128, 128, 0.322);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.product-details-description{
+    margin-top: 20px;
+    color: rgb(75, 75, 75);
+    line-height: 1.2rem;
+    max-width: 450px;
+    font-size: 14px;
+}
+
+.back-button{
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.counter-button{
+    padding: 5px 10px;
+    color: rgb(26, 25, 25);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -12px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(182, 182, 182);
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.decrease-button{
+    padding: 5px 10px;
+    background-color: #ff4d4d00;
+    color: rgb(175, 114, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.increase-button{
+    padding: 5px 10px;
+    background-color: #4caf4f00;
+    color: rgb(175, 114, 1);
+    border: none;
+    cursor: pointer;
+}
+
+.add-to-cart-details-button{
+    padding: 10px 15px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* ✅ MOBILE (max-width: 768px) */
+@media (max-width: 768px) {
+  .product-details-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .product-details-image {
+    width: 70%;
+    height: auto;
+  }
+
+  /* ✅ Truncate description on mobile */
+  .product-details-description {
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+  }
+
+  /* ✅ Expand on hover */
+  .product-details-card:hover .product-details-description {
+    max-width: 100%;
+    white-space: normal;
+    overflow: visible;
+  }
+
+  .back-button {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .counter {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .add-to-cart-details-button {
+    width: 100%;
+    font-size: 14px;
+  }
+}

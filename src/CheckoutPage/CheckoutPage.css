@@ -1,0 +1,536 @@
+.double-sides{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.first-one{
+    margin-left: 70px;
+    border: 1px solid rgba(185, 181, 181, 0.562);
+    width: 35%;
+    border-right: none;
+    border-radius: 5px;
+    padding: 15px;
+    animation: slideInLeft 0.7s ease-out forwards;
+     box-shadow: 
+    0 0 15px rgba(87, 0, 150, 0.116),
+    inset 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+
+.second-one {
+  margin-right: 70px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: 35%;
+  border-radius: 10px;
+  padding: 25px 15px;
+  animation: slideInRight 0.7s ease-out forwards;
+  border-left: none;
+  /* Darker gradient background with subtle glow */
+  background: radial-gradient(
+    circle at center,
+         /* soft white core */
+    rgba(53, 2, 90, 0.938) 35%,       /* deep purple mid */
+    rgb(18, 1, 36) 100%           /* very dark edge */
+  );
+
+  /* Frosted glass + glow depth */
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+
+  /* Deep 3D shadow and inner light */
+  box-shadow: 
+    0 0 15px rgba(87, 0, 150, 0.459),
+    inset 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+/* Hover effect — adds depth and soft neon pop */
+.second-one:hover {
+  box-shadow:
+    0 0 10px rgba(120, 45, 226, 0.9),
+    inset 0 0 15px rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
+
+
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-label {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.the-cards{
+    display: flex;
+    gap: 10px;
+}
+
+.first-card{
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    width: 300px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.first-card-active{
+    border: 1px solid rgba(7, 59, 230, 0.301);
+    width: 300px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px 10px;
+    box-shadow: 0 0 2px rgba(0, 123, 255, 0.247); /* blue shadow */
+    transition: all 0.3s ease;
+}
+.second-card{
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    width: 300px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.second-card-active{
+    border: 1px solid rgba(7, 59, 230, 0.301);
+    width: 300px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px 10px;
+    box-shadow: 0 0 2px rgba(0, 123, 255, 0.247); /* blue shadow */
+    transition: all 0.3s ease;
+}
+
+.card-details-container{
+    width: 100%;
+}
+.input-field-card{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: border-color 0.2s ease;
+}
+
+.payment-container{
+    line-height: 1.3rem;
+}
+
+.payment-details-text{
+    font-size: 1.1rem;
+}
+
+.payment-despcription{
+    font-size: .6rem;
+    color: #333;
+}
+
+.input-label{
+    font-size: .8rem;
+    margin-top: 5px;
+}
+
+.select-payment-text{
+     font-size: .8rem;
+     margin: 5px 0;
+     color: #333333d7;
+     font-weight: 500;
+}
+
+.visa-first-icon{
+    font-size: .8rem;
+    color: #333333f1;
+}
+
+.typings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.type-cards{
+    font-size: .8rem;
+    color: grey;
+}
+
+.active-style{
+    display: flex;
+    color: blue;
+    font-size: .9rem;
+    font-weight: 700;
+    transition: all 0.9s ease;
+}
+
+.idle-style{
+    display: none;
+}
+
+.card-details-container{
+    margin: 15px 0;
+}
+
+.card-details-text{
+    font-size: .8rem;
+     margin: 5px 0;
+     color: #333333d7;
+     font-weight: 500;
+}
+
+.visa-container{
+    background-color: white;
+    box-shadow: 0 0 2px rgba(18, 21, 26, 0.062);
+    border: 1px solid rgba(184, 176, 176, 0.281);
+    border-radius:5px ;
+}
+
+.visa-number{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-bottom: 1px solid rgba(184, 176, 176, 0.281);
+    
+}
+
+.v-number{
+    font-size: .8rem;
+     margin: 5px 0;
+     color: #272727d7;
+     font-weight: 400;
+}
+
+.v-icon{
+    font-size: 1.1rem;
+    color: black;
+}
+
+.two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.date{
+    font-size: .8rem;
+    color: #272727d7;
+    font-weight: 400;
+}
+
+.date-con{
+    width: 50%;
+    border-right: 1px solid rgba(184, 176, 176, 0.425);
+}
+
+.subTotal-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: 15px 0;
+}
+
+.subTotal-text{
+   font-size: .8rem;
+    color: #141414;
+    font-weight: 600;
+}
+
+.subtotal-amount{
+    font-size: .8rem;
+    color: #141414;
+    font-weight: 800;
+}
+
+.total-amount{
+    font-size: .8rem;
+    color: #1403a8;
+    font-weight: 800;
+   
+}
+
+.total-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 10px 10px;
+    margin: 15px 0;
+     border-bottom: 1px solid rgba(184, 176, 176, 0.281);
+}
+
+.chk-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-payment{
+    width: 100%;
+    padding: 10px;
+    background-color: #1403a8;
+    color: white;
+    border-radius: 5px;
+}
+
+.product-ifo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-infotext{
+    color: white;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.info-desp{
+    color: rgba(255, 255, 255, 0.863);
+    font-size: .6rem;
+    font-weight: 300;
+}
+a{
+    color: white;
+    font-weight: 400;
+}
+
+.first-info{
+    line-height: 1rem;
+}
+
+.btn-q{
+    width: 70px;
+    padding: 3px;
+    border-radius: 9px;
+    font-size: .7rem;
+    background-color: #9e1bd1;
+    color: white;
+}
+
+.checkout-title{
+    font-size: .7rem;
+    color: white;
+    width: 190px;
+}
+
+.item-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding:0 10px;
+    background-color: #9601d175;
+    
+}
+
+.first-item-chk{
+    display: flex;
+    align-items: center;
+   
+}
+
+.btn-checkout{
+    margin-right: 0px;
+}
+
+.checking-out{
+    width: 65px;
+    padding: 3px;
+    border-radius: 9px;
+    font-size: .7rem;
+    background-color: #fbf9fc;
+    color: rgb(0, 0, 0);
+}
+
+.line{
+    height: 4px;
+    margin-top:15px;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, transparent, white, transparent) 1;
+}
+
+/* ✅ MOBILE (max-width: 768px) */
+@media (max-width: 768px) {
+
+  .double-sides {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .first-one,
+  .second-one {
+    width: 90%;
+    margin: 0;
+    padding: 15px;
+  }
+
+  .first-one {
+    margin-left: 0;
+    border-right: 1px solid rgba(185, 181, 181, 0.562); /* restore full border */
+  }
+
+  .second-one {
+    margin-right: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.15); /* restore full border */
+  }
+
+  .the-cards {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .first-card,
+  .first-card-active,
+  .second-card,
+  .second-card-active {
+    width: 100%;
+  }
+
+  .card-details-container {
+    width: 100%;
+  }
+
+  .product-ifo-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .checkout-title {
+    width: 100%;
+    font-size: 0.75rem;
+  }
+
+  .item-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .first-item-chk {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .btn-payment {
+    width: 100%;
+  }
+
+  .chk-btn {
+    justify-content: center;
+  }
+
+  .btn-q,
+  .checking-out {
+    width: 100%;
+    text-align: center;
+  }
+
+  .subTotal-container,
+  .total-container {
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .subTotal-text,
+  .subtotal-amount,
+  .total-amount {
+    font-size: 0.8rem;
+  }
+
+  .payment-details-text {
+    font-size: 1rem;
+  }
+
+  .payment-despcription {
+    font-size: 0.65rem;
+  }
+
+  .visa-container {
+    width: 100%;
+  }
+
+  .input-group {
+    margin-bottom: 0.8rem;
+  }
+
+  .input-field,
+  .input-field-card {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .typings {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .select-payment-text {
+    font-size: 0.75rem;
+  }
+
+  .type-cards {
+    font-size: 0.75rem;
+  }
+
+  .active-style {
+    font-size: 0.85rem;
+  }
+
+  .payment-container {
+    width: 100%;
+  }
+
+  .visa-number,
+  .two {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .v-number,
+  .date {
+    font-size: 0.75rem;
+  }
+
+  .btn-checkout {
+    width: 100%;
+  }
+
+  .line {
+    margin-top: 10px;
+  }
+
+}
