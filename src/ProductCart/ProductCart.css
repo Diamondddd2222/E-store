@@ -511,8 +511,11 @@ input::placeholder{
     overflow: visible;
   }
   .cart-items-box{
-     padding: 0%;
-     margin: 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
   }
 
   
