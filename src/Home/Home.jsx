@@ -161,6 +161,8 @@ const handleLogout = () => {
             </div>
           </div>
 
+
+ {/**start */}
           <div className="user-col">
             <div className="cart-icon-div" onClick={shoppingCartPage}>
               <BsCart4 className='cart-icon' />
@@ -192,6 +194,7 @@ const handleLogout = () => {
               
             </div>
           </div>
+          {/**end */}
         </div>
       </div>
 
