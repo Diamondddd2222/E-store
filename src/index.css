@@ -1,4 +1,4 @@
-body {
+body, html {
   background-color: rgb(248, 246, 246);
   font-family: rubik;
   
@@ -14,4 +14,5 @@ body {
   outline: none;
   border: none;
   font-family: rubik;
+ 
 }

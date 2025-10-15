@@ -382,13 +382,16 @@ a{
     align-items: center;
     gap: 20px;
     margin-top: 20px;
+     width: 100%;
+  max-width: 100%;
   }
 
   .first-one,
   .second-one {
-    width: 90%;
-    margin: 0;
-    padding: 15px;
+     width: 90%;
+  max-width: 100%;
+    
+    
   }
 
   .first-one {
