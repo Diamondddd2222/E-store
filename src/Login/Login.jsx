@@ -18,7 +18,7 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [message, setMessage] = useState("");
   const [unverifiedUser, setUnverifiedUser] = useState(null);
-
+  const from = location.state?.from?.pathname || '/'
   const navigate = useNavigate();
   const dispatch = useDispatch(); // ✅ FIXED
 
@@ -51,6 +51,7 @@ const Login = () => {
           email: user.email,
         })
       );
+      navigate(from, { replace: true });
 
       console.log("✅ User stored in Redux");
 
@@ -78,6 +79,7 @@ const Login = () => {
       console.error("Resend error:", err);
       setMessage("Couldn't resend email. Try again later.");
     }
+
   };
 
   return (
