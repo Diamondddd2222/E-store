@@ -479,8 +479,11 @@ li{
     flex-direction: column;
     align-items: flex-start;
     margin-left: 15px;
-    
-    
+}
+
+.create-logout{
+    display: flex;
+    gap: 10px;
 }
 
 

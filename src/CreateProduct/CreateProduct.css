@@ -1,0 +1,131 @@
+/* animation.css */
+.bounce {
+  animation: bounce 2s infinite;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+   font-family: 'Great Vibes', cursive;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+.bounce-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0e0133, #1e013a, #5f0185a9);
+
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease infinite;
+}
+
+.bounce-container::before,
+.bounce-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent 0 48px,
+    white 48px 52px
+  );
+  mask-image: repeating-linear-gradient(
+    90deg,
+    transparent 0 48px,
+    white 48px 52px
+  );
+  opacity: 0.25;
+  animation: moveArrows 8s linear infinite;
+}
+
+.bounce-container::after {
+  opacity: 0.15;
+  animation-duration: 12s;
+}
+
+@keyframes moveArrows {
+  from { transform: translateX(0); }
+  to { transform: translateX(-200px); }
+}
+
+
+/* The bouncing element */
+.bounce {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  animation: bounceAnim 2s infinite;
+}
+
+/* Keyframes */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes floatParticles {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(200px); }
+}
+
+@keyframes bounceAnim {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+
+.main-create-container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+
+}
+
+.create-side{
+    background-color: grey;
+    width: 50%;
+    height: 100vh;  
+}
+
+.three-identity{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+}
+
+.create-side-wrapper{
+  background-color: white;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.input-title-createpage{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(53, 53, 53, 0.274);
+}
+
+.inputs-container-wrapper{
+    line-height: 2.5rem;
+    margin-top: 20px;
+}
+
+.adding-image-icon{
+    border: 1px solid black;
+}

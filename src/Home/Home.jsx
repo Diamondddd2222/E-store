@@ -81,6 +81,10 @@ const handleLogout = () => {
     navigate('/Signup');
   };
 
+  const CreateProductPage = () => {
+    navigate('/CreateProduct');
+  };
+
   const goToDetails = (id) => {
     navigate(`/Product/${id}`);
   };
@@ -179,9 +183,13 @@ const handleLogout = () => {
               {
                 user.uid ? (
                   <div className='logout-container'>
-                  <p className="user-email">{user.name}</p>
-                  <button className="logout" onClick={handleLogout}>Logout</button>
+                  <p className="user-email">Welcome {user.name}</p>
+                   <div className="create-logout">
+                     <button className="logout" onClick={handleLogout}>Logout</button>
+                     <BsCart4 className='cart-icon' onClick={CreateProductPage} />
+                   </div>
                   </div>
+                  
                 ) : (
                   <>
                       <p className="welcome-text">Welcome!</p><div className="sign-register">
