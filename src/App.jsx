@@ -17,6 +17,7 @@ import { doc, setDoc, getDoc} from 'firebase/firestore'
 import { db } from "./firebase";
 import ProtectedRoute from "./ProtectedRoute/ProtectedRoute";
 import CreateProduct from "./CreateProduct/CreateProduct";
+import DisplayProducts from "./DisplayProducts/DisplayProducts";
 
 function App() {
   console.log("✅ App.jsx loaded");
@@ -83,6 +84,7 @@ function App() {
       <Route path="/login" element={<Login/>}/>
       <Route path="/ForgetPassword" element={<ForgetPassword/>}/>
       <Route path="/CreateProduct" element={<CreateProduct/>}/>
+      <Route path="/DisplayProducts" element={<DisplayProducts/>}/>
     </Routes>
   );
 }
